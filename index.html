@@ -1,0 +1,246 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel World | First Year Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- CSS STYLES --- */
+        
+        /* 1. Resetting default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* 2. Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            position: fixed; /* Sticks to top */
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2d3436;
+        }
+
+        .logo span {
+            color: #0984e3; /* Blue accent */
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2d3436;
+            margin-left: 35px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #0984e3;
+        }
+
+        /* 3. Hero Section (Main Image) */
+        .hero {
+            height: 100vh; /* Full screen height */
+            width: 100%;
+            /* Image Link */
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .btn-main {
+            padding: 12px 30px;
+            background: #0984e3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-main:hover {
+            background: #74b9ff;
+            transform: translateY(-3px);
+        }
+
+        /* 4. Destinations Grid */
+        .destinations {
+            padding: 80px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2em;
+            margin-bottom: 50px;
+            color: #2d3436;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px); /* Moves up on hover */
+            box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+
+        .card p {
+            font-size: 0.9em;
+            color: #636e72;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            color: #0984e3;
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+
+        /* 5. Student Footer */
+        footer {
+            background: #2d3436;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 0.9em;
+            color: #b2bec3;
+        }
+
+        .student-info {
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Travel<span>World</span></div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Packages</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Explore the World</h1>
+        <p>Your adventure begins here. Discover new places and create unforgettable memories.</p>
+        <a href="2.html" class="btn-main">Start Journey</a>
+    </section>
+
+    <section class="destinations">
+        <h2 class="section-title">Top Destinations</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=2566&auto=format&fit=crop" alt="Venice">
+                <div class="card-content">
+                    <h3>Venice, Italy</h3>
+                    <p>Enjoy the beautiful canals and historic architecture of Italy.</p>
+                    <span class="price">$900</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1506461883276-594a12b11cf3?q=80&w=2670&auto=format&fit=crop" alt="India">
+                <div class="card-content">
+                    <h3>Kerala, India</h3>
+                    <p>Experience the backwaters and green nature of God's Own Country.</p>
+                    <span class="price">$450</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=2694&auto=format&fit=crop" alt="Japan">
+                <div class="card-content">
+                    <h3>Tokyo, Japan</h3>
+                    <p>A mix of ultramodern style and traditional culture.</p>
+                    <span class="price">$1200</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span class="student-info">Developed by: [ YOUR NAME HERE ]</span>
+        <p>Roll Number: [251U1R2068,251U1R2062]</p>
+        <p>Class: 1st Year | Subject: Web Technology</p>
+        <p>&copy; 2025 TravelWorld Project</p>
+    </footer>
+
+</body>
+</html>
